@@ -23,6 +23,9 @@ RUN tar xvf filebot.tar.xz
 RUN chmod +x filebot.sh
 RUN mv filebot.sh filebot
 
+# add local files
+COPY root/ /
+
 # RUN filebot --help
 
 # RUN filebot -script fn:sysinfo
