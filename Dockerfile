@@ -1,4 +1,4 @@
-FROM ghostserver/linuxserver-qbittorrent
+FROM ghostserver/qbittorrent
 
 USER root
 
