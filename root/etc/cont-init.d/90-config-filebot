@@ -1,21 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-cat <<"EOF"
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-         _               _
-    __ _| |__   ___  ___| |_
-   / _` | '_ \ / _ \/ __| __/
-  | (_| | | | | (_) \__ \ |_
-   \__, |_|_|_|\___/|___/\__|
-   |___/      /   _ \
-          (¯\| o (@) |/¯)
-           \_  .___.  _/
-            /   !_!   \
-           /_.--._.--._\
-
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-EOF
-
 # insert filebot run config for qBittorrent
 printf '%s\n' '' '[AutoRun]' 'enabled=true' 'program="filebot -script fn:amc --output /media --action duplicate --conflict auto -non-strict --log-file /media/fb.log --def unsorted=y music=y artwork=y subtitles=en movieFormat={plex} seriesFormat={plex} animeFormat={plex} musicFormat={plex} ut_dir=\"%R\" ut_title=\"%N\""' > /config/qBittorrent/qBittorrent.conf
 
