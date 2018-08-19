@@ -1,10 +1,10 @@
 #!/usr/bin/with-contenv bash
 
-sed -i '/\[AutoRun\]/d' /config/qBittorrent/qBittorrent.conf
-sed -i '/enabled=false/d' /config/qBittorrent/qBittorrent.conf
-sed -i '/enabled=true/d' /config/qBittorrent/qBittorrent.conf
-sed -i '/program=/d' /config/qBittorrent/qBittorrent.conf
-sed -i '/WebUI\\Password_ha1=' /config/qBittorrent/qBittorrent.conf
+sed -i '\[AutoRun\]/d' /config/qBittorrent/qBittorrent.conf
+sed -i 'enabled=false/d' /config/qBittorrent/qBittorrent.conf
+sed -i 'enabled=true/d' /config/qBittorrent/qBittorrent.conf
+sed -i 'program=/d' /config/qBittorrent/qBittorrent.conf
+sed -i 'WebUI\\Password_ha1=' /config/qBittorrent/qBittorrent.conf
 sed -i 'WebUI\\Username=' /config/qBittorrent/qBittorrent.conf
 sed -i 'Downloads\\SavePath=' /config/qBittorrent/qBittorrent.conf
 
