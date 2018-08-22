@@ -1,8 +1,8 @@
 #!/usr/bin/with-contenv bash
 
-sed -i '\[AutoRun\]/d' /config/qBittorrent/qBittorrent.conf
-sed -i 'enabled=false/d' /config/qBittorrent/qBittorrent.conf
-sed -i 'enabled=true/d' /config/qBittorrent/qBittorrent.conf
+sed -i '/\[AutoRun\]/d' /config/qBittorrent/qBittorrent.conf
+sed -i '/enabled=false/d' /config/qBittorrent/qBittorrent.conf
+sed -i '/enabled=true/d' /config/qBittorrent/qBittorrent.conf
 
 # insert filebot run config for qBittorrent
 printf '%s\n' '' '[AutoRun]' 'enabled=true' 'program="filebot -script fn:amc --output /media --action duplicate --conflict auto -non-strict --log-file /media/fb.log --def unsorted=y music=y artwork=y subtitles=en movieFormat={plex} seriesFormat={plex} animeFormat={plex} musicFormat={plex} ut_dir=\"%R\" ut_title=\"%N\""' >> /config/qBittorrent/qBittorrent.conf
